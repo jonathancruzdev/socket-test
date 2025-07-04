@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexiones Sockets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/chat.png" type="image/png">
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="bg-success text-white">
+        <h1>Socket</h1>
+    </header>
+    <main class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <h4>Chats</h4>
+                <ul id="mensajes" class="card p-4">
+                    <li> mensaje</li>
+                </ul>
+            </div>
+            <div class="col">
+                <form class="card p-4">
+                    <label for="">Mensaje</label>
+                    <textarea id="mensaje" class="form-control"></textarea>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white">
+        <p> DV | Apliaciones Híbridas | 2025</p>
+    </footer>
+</body>
+</html>
